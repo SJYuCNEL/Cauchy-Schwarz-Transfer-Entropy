@@ -11,4 +11,4 @@ References:
 -->
 
 # Cauchy-Schwarz-Transfer-Entropy
-This repository serves as the supplementary material for our academic paper *Cauchy-Schwarz Divergence Transfer Entropy*. It provides detailed mathematical proofs, experimental details, and comparisons of causal networks generated using different methods.
+This repository serves as the supplementary material for our paper *Cauchy-Schwarz Divergence Transfer Entropy*. It provides detailed mathematical proofs, experimental details, and comparisons of causal networks generated using different methods.
