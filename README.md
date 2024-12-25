@@ -8,6 +8,12 @@ This is the official repo of our paper *Cauchy-Schwarz Divergence Transfer Entro
   <em>Figure 1: Complex Causal Relationships</em>
 </p>
 
+<p align="center">
+  <img src="https://github.com/zhaozhaoma/Images/blob/main/1.png" width="800" alt="CS-TE Overview"/>
+  <br>
+  <em>Figure 1: Complex Causal Relationships</em>
+</p>
+
 Cauchy-Schwarz Transfer Entropy (CS-TE) is a novel approach for measuring information flow between time series data, based on the Cauchy-Schwarz divergence. This method offers improved computational efficiency and robustness against noise compared to traditional transfer entropy measures
 
 ```
