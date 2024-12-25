@@ -32,27 +32,66 @@ We Explore the use of classifiers instead of traditional regression models for G
 #### 📈 Empirical Validation
 We demonstrate the effectiveness of CS-TE and its extensions on benchmark simulated datasets and real-world stock index data from 14 global markets. The results validate the method’s capability to accurately detect and analyze causal relationships in diverse and complex systems.
 
-#### 🛠️ Comprehensive Toolset
-We provided a complete implementation of CS-TE, including visualization tools, facilitating easy adoption and application in various domains such as finance.
-
 ## Repository Structure
 ```
 .
-├── code_demo/                       # Example implementations
-│   └── CS_TE_Demo.ipynb             # Jupyter notebook demos
-├── supplementary_material/          # Additional resources
-│   ├── motivation/                  # Detailed proofs
-│   ├── mathematical_proofs/         # Detailed proofs
-│   ├── experimental_details/        # Experiment specifications
-│   └── network_comparisons/         # Causal network analysis
-├── data/                            # Example datasets
-└── docs/                            # Documentation
+├── code_demo/                       
+│   └── Code Demo.ipynb               # Jupyter notebook demo
+│       ├── CS-TE Core Function Implementation/
+│       └── Calculation Example/
+├── supplementary_material/           # Additional resources
+    ├── Motivation/                   # Motivation of this paper
+    ├── Mathematical Proofs/          # Detailed proofs for empirical estimator of CS Divergence
+    ├── Casual Network Comparisons/   # Causal network comparison based on 5 different methods
+    ├── Experimental Details/         # Including nonlinear test data, Gaussian Kernel Bandwidth, and validation of causal network illustration
+    └── Permutation Test/             # Algorithm flow of permutation test
+
 ```
 
-This repository serves as the supplementary material for our paper *Cauchy-Schwarz Divergence Transfer Entropy*.
+
+> [!NOTE]
+> Gaussian kernel bandwidth plays a crucial role in the overall computation. Proper adjustments must be made according to the data characteristics. You can adjust the `eta` parameter in the `compute_causality` function to modify this aspect of the calculation. For more details about Gaussian kernel bandwidth, please refer to our supplementary material.
+
+## Citation
+If you find the paper and any resources here helpful, please kindly cite our paper:
+```
+@article{,
+  title={Cauchy-Schwarz Divergence Transfer Entropy},
+  author={},
+  journal={},
+  year={}
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!This repository serves as the supplementary material for our paper *Cauchy-Schwarz Divergence Transfer Entropy*.
 
 Please review the [Supplementary Material](https://github.com/zhaozhaoma/Cauchy-Schwarz-Transfer-Entropy/tree/main/Supplementary%20Material) folder, which contains detailed mathematical proofs, experimental details, and comparisons of causal networks generated using different methods.
 
-For sample code related to Cauchy-Schwarz Divergence Transfer Entropy (CS-TE), you can click on the [Code Demo](https://github.com/zhaozhaoma/Cauchy-Schwarz-Transfer-Entropy/tree/main/Code%20Demo) folder to explore the corresponding Jupyter Notebook.
+For sample code related to Cauchy-Schwarz Divergence Transfer Entropy (CS-TE), you can click on the [Code Demo](https://github.com/zhaozhaoma/Cauchy-Schwarz-Transfer-Entropy/tree/main/Code%20Demo) folder to explore the corresponding Jupyter Notebook.>
+
+
+
+
 
 
