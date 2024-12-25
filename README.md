@@ -1,21 +1,41 @@
 # Cauchy-Schwarz-Transfer-Entropy
-This is the official repo of our paper *Cauchy-Schwarz Divergence Transfer Entropy*. If you find it helpful, please kindly 🌟star it and cite our 📜paper.
+This repository contains the official implementation for our paper, *Cauchy-Schwarz Divergence Transfer Entropy*, which has been accepted for presentation at **ICASSP 2025**. If you find it helpful, please kindly 🌟star it and cite our 📜paper.
 
-
+## Overview
 <p align="center">
-  <img src="Complex Causal Relationships.png" width="800" alt="CS-TE Overview"/>
+  <img src="https://github.com/zhaozhaoma/Images/blob/main/ICASSP2025/KL%20Divergenc%26%20CS%20Divergence%20Comparison.png" width="500" alt="CS-TE Overview"/>
   <br>
-  <em>Figure 1: Complex Causal Relationships</em>
+  <em>Figure 1: KL divergence is infinite even though there is an overlap between supp(p) and supp(q), but neither is a subset of the other. CS divergence does not have such constraint.</em>
 </p>
 
 <p align="center">
-  <img src="https://github.com/zhaozhaoma/Images/blob/main/1.png" width="800" alt="CS-TE Overview"/>
+  <img src="https://github.com/zhaozhaoma/Images/blob/main/ICASSP2025/Complex%20Causal%20Relationships.png" width="500" alt="CS-TE Overview"/>
   <br>
-  <em>Figure 1: Complex Causal Relationships</em>
+  Figure 2: (a) indirect causality from 𝑥 to 𝑧. (b) 𝑥 is a confounder to 𝑦 and 𝑧; (c) synergistic effect (𝑥 and 𝑦 produce a causal effect to 𝑧 greater than the sum of their individual effects).
 </p>
 
-Cauchy-Schwarz Transfer Entropy (CS-TE) is a novel approach for measuring information flow between time series data, based on the Cauchy-Schwarz divergence. This method offers improved computational efficiency and robustness against noise compared to traditional transfer entropy measures
+This paper introduces Cauchy-Schwarz Transfer Entropy (CS-TE), a novel information-theoretic measure for detecting causality in time series data. By leveraging the Cauchy-Schwarz (CS) divergence, CS-TE provides a closed-form estimator that simplifies computation and extends the capability of traditional Transfer Entropy (TE) to capture more intricate causal relationships. Additionally, we explore a supervised learning approach for Granger causality tests, enhancing the robustness and applicability of causal inference in complex systems.
 
+## Contributions
+#### 🚀 Closed-Form Estimator
+We develop a Cauchy-Schwarz Transfer Entropy (CS-TE) with a closed-form estimator, enabling efficient and straightforward computation of transfer entropy without the need for complex regression models.
+
+#### 🔗 Multivariate Extensions
+We introduce CS-Conditional Transfer Entropy (CS-CTE) and CS-Joint Transfer Entropy (CS-JTE), extending CS-TE to multivariate time series. These extensions allow for the identification of indirect causation and synergistic effects, capturing more comprehensive causal interactions beyond pairwise relationships.
+
+#### 📊 Robust Causal Inference
+We Enhance the robustness of causal network analysis by utilizing CS divergence, which offers superior performance in the presence of noise and high-dimensional data, making it suitable for real-world applications.
+
+#### 🤖 Supervised Causality Detection
+We Explore the use of classifiers instead of traditional regression models for Granger causality tests. By constructing supervised learning frameworks with features based on CS-TE, the approach simplifies the inference of causal directions without relying on permutation tests.
+
+#### 📈 Empirical Validation
+We demonstrate the effectiveness of CS-TE and its extensions on benchmark simulated datasets and real-world stock index data from 14 global markets. The results validate the method’s capability to accurately detect and analyze causal relationships in diverse and complex systems.
+
+#### 🛠️ Comprehensive Toolset
+We provided a complete implementation of CS-TE, including visualization tools, facilitating easy adoption and application in various domains such as finance.
+
+## Repository Structure
 ```
 .
 ├── code_demo/                       # Example implementations
