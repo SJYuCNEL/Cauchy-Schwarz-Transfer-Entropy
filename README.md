@@ -1,5 +1,5 @@
 # Cauchy-Schwarz-Transfer-Entropy
-This repository contains the official implementation for our paper, *Cauchy-Schwarz Divergence Transfer Entropy*, which has been accepted for presentation at **ICASSP 2025**. If you find it helpful, please kindly 🌟star it and cite our 📜paper.
+This repository contains the official implementation for our paper, *Cauchy-Schwarz Divergence Transfer Entropy*, which has been accepted for presentation at **ICASSP 2025**. If you find it helpful, please kindly cite our 📜paper.
 
 ## Overview
 <p align="center">
@@ -55,11 +55,13 @@ We demonstrate the effectiveness of CS-TE and its extensions on benchmark simula
 ## Citation
 If you find the paper and any resources here helpful, please kindly cite our paper:
 ```
-@article{,
+@inproceedings{ma2025cauchy,
   title={Cauchy-Schwarz Divergence Transfer Entropy},
-  author={},
-  journal={},
-  year={}
+  author={Ma, Zhaozhao and Yu, Shujian},
+  booktitle={ICASSP 2025-2025 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  pages={1--5},
+  year={2025},
+  organization={IEEE}
 }
 ```
 
